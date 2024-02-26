@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptador</title>
+  
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="box01">
+        <div class="box02">
+            <img class="alura" src="img/logo.svg" alt="logo-alura">
+            <div class="box02-1">
+                <div class="box02-1-1">
+                    <textarea class="texto" onkeypress="return restriccionTexto(event)" placeholder="Ingrese el texo aquí" name="comentarios" rows="10" cols="50" ></textarea>
+                </div>
+                <div class="box02-2"> 
+                        <div class="box02-3">
+                            <p class="restricciones">Solo letras minúsculas y sin acento</p>
+                        </div>
+                        <div class="box-boton">
+                            <button class="encriptar" onclick="botonEncriptar()">Encriptar</button>
+                            <button class="desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="box03">
+            <div class="box03-1-1">
+                <textarea class="resultado"></textarea>
+            </div>
+            <div class="box03-1">
+                
+                <img class="vacio" src="img/Muñeco.svg" alt="logo-muñeco">
+                <h1>Ningún mensaje fue encontrado</h1>
+                <p class="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div class="box03-2">
+                <button class="copiar" onclick="botonCopiar()">Copiar</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
